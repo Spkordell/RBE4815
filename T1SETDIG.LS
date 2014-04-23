@@ -21,19 +21,19 @@
 16: J P[R[52]] 50% FINE
 17: CALL T1OPEN
 18: !move down onto digit
-19: L P[24] 50% FINE INC
+19: L P[24] 500mm/sec FINE INC
 20: CALL T1CLOSE
 21: !move up over the digit
-22: L P[25] 50% FINE INC
+22: L P[25] 500mm/sec FINE INC
 23: LBL[54]
 24: !Place segment in position
 25: !Move over segment to place
 26: J P[R[50]] 50% FINE
 27: !Move segment down
-28: L P[24] 50% FINE INC
+28: L P[24] 500mm/sec FINE INC
 29: CALL T1OPEN
 30: !move back up
-31: L P[25] 50% FINE INC
+31: L P[25] 500mm/sec FINE INC
 
 /POS
 
