@@ -78,4 +78,8 @@
 /POS
 
 
+!Need poses 1 to 23 above each digital segment
+!Need pose 24 to go down onto digit incrementally
+!Need pose 25 to go up above digit incrementally
+
 /END
