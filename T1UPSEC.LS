@@ -4,7 +4,7 @@
 /MN
 
 
-1:
+1: !Update the second rods - incomplete
 30: !Loop counter Variables
 31: R[50]=1
 32: R[51]=1

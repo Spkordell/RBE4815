@@ -3,23 +3,18 @@
 /MN
 
 
-1:
-30: !Loop counter Variables
-31: R[50]=1
-32: R[51]=1
-33: LBL[50]
-34: !if this segment is set
-35: !and it should be clear
-35: R[52]=R[50]+23
-34: IF R[R[50]] = 1 and R[R[52]] = 0,CALL FIND_EMPTY
+1: !Update the digital display
+2: !Loop counter Variables
+3: R[50]=1
+3: LBL[50]
+4: !if this segment is clear
+5: !and it should be set
+6: R[51]=R[50]+23
+7: IF R[R[50]] = 0 and R[R[51]] = 1,CALL T1SETDIG
+8: R[50]=R[50]+1
+9: IF R[50] <= 23, JMP LBL[50]
+10: !TODO remove leftover
 
-
-35: R[50]=R[50]+1
-36: R[51]=R[51]+1
-37: IF R[50] <= 23, JMP LBL[50]
-
-
-11: Message[PROGRAM END MESSAGE TEST]
 
 /POS
 

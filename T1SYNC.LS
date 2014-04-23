@@ -1,9 +1,9 @@
-/PROG T1UPDIG
+/PROG T1SYNC
 /ATTR
 /MN
 
 
-1:
+1: !Fill R[24]-RR[46] with the current time - Incomplete
 30: !Loop counter Variables
 31: R[50]=1
 32: R[51]=1
