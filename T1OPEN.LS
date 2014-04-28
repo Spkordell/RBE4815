@@ -6,7 +6,7 @@
 
 1: !Open the gripper
 2: !This is reversed
-3: 7: CALL GRIPCLOS;
+3: CALL GRIPCLOS;
 
 /POS
 
