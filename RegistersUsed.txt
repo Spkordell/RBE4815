@@ -1,0 +1,15 @@
+Digits of Clock State:
+1-23
+
+Digits of actual time:
+24-46
+
+Loop  Counters:
+50
+52
+54
+
+Misc
+51
+53
+55
