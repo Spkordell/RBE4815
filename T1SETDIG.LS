@@ -28,7 +28,7 @@
 23: LBL[54];
 24: !Place segment in position
 25: !Move over segment to place
-26: J P[R[50]] 50% FINE;
+26: CALL T1OVRDIG(R[50]);
 27: !Move segment down
 28: L P[24] 500mm/sec FINE INC;
 29: CALL T1OPEN;

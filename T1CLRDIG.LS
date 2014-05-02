@@ -5,7 +5,7 @@
 1: !clears a segment
 2: CALL T1OPEN;
 3: !move to digit to remove
-4: J P[R[54]] 50% FINE;
+4: CALL T1OVRDIG (R[54]);
 5: !move down onto segment;
 6: L P[24] 500mm/sec FINE INC;
 7: CALL T1CLOSE;
