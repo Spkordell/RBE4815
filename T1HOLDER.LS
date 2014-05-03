@@ -13,6 +13,7 @@
 9: J P[28] 50% FINE;
 10: L P[29] 500mm/sec FINE;
 11: CALL T1CLOSE
+12: L P[28] 500mm/sec FINE;
 
 /POS
 
