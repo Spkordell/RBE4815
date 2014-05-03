@@ -105,66 +105,137 @@
 93: R[76]=DI[106];
 94: R[77]=DI[107];
 
-85: !Process second incoming second value
+95: !Process second incoming second value
+
+96: !if segment 2 is 0, must be a 2
+97: IF R[71] = 0, JMP LBL[1];
+98: !segment 6 and 7, Must be a 4
+99: IF R[75] = 0 AND R[76] = 1, JMP LBL[2];
+100: !segment 5 and 7, Must be a 0
+101: IF R[74] = 1 AND R[76] = 0, JMP LBL[3];
+102: !segment 6 and 7, Must be a 7
+103: IF R[75] = 1 AND R[76] = 0, JMP LBL[4];
+104: !segment 6 and 7, Must be a 1
+105: IF R[75] = 0 AND R[76] = 0, JMP LBL[5];
+106: !segment 5 and 6, Must be a 3
+107: IF R[74] = 0 AND R[75] = 1, JMP LBL[6];
+108: !segment 1 and 4, Must be a 5
+109:  R[70] = 0 AND R[73] = 0, JMP LBL[7];
+110: !segment 4, Must be a 9
+111: IF R[73] = 0, JMP LBL[8];
+112: !segment 1, Must be a 6
+113: IF R[70] = 0, JMP LBL[9];
+114: !If made it here, first digit must be 8
+115: R[61]=80
+116: !Jump to end of this routine
+117: JMP LBL[10];
+
+
+118: !Below here are LBLs to set the first digit
+
+119: LBL[41];
+120: !first digit must be a 2
+121: R[61]=20;
+122: JMP LBL[40];
+
+123: LBL[42];
+124: !first digit must be a 4
+125: R[61]=40;
+126: JMP LBL[40];
+
+127: LBL[43];
+128: !If here, first digit must be a 0
+129: R[61]=00;
+130: JMP LBL[40];
+
+131: LBL[44];
+132: !first digit must be a 7
+133: R[61]=70;
+134: JMP LBL[40];
+
+135: LBL[45];
+136: !first digit must be a 1
+137: R[61]=10;
+138: JMP LBL[40];
+
+139: LBL[46];
+140: !first digit must be a 3
+141: R[61]=30;
+142: JMP LBL[40];
+
+143: LBL[47];
+144: !first digit must be a 5
+145: R[61]=50;
+146: JMP LBL[40];
+
+147: LBL[48];
+148: !first digit must be a 9
+149: R[61]=90;
+150: JMP LBL[40];
+
+151: LBL[49];
+152: !first digit must be a 6
+153: R[61]=60;
+154: JMP LBL[40];
 
 
 
-need to fix line numbers below this point
+155: !Below here are LBLs to set the second digit
+
+156: LBL[1];
+157: !second digit must be a 2
+158: R[61]=R[61]+2;
+159: JMP LBL[10];
+
+160: LBL[2];
+161: !second digit must be a 4
+162: R[61]=R[61]+4;
+163: JMP LBL[10];
+
+164: LBL[3];
+165: !If here, second digit must be a 0
+166: R[61]=R[61];
+167: JMP LBL[10];
+
+168: LBL[4];
+169: !second digit must be a 7
+170: R[61]=R[61]+7;
+171: JMP LBL[10];
+
+172: LBL[5];
+173: !second digit must be a 1
+174: R[61]=R[61]+1;
+175: JMP LBL[10];
+
+176: LBL[6];
+177: !second digit must be a 3
+178: R[61]=R[61]+3;
+179: JMP LBL[10];
+
+180: LBL[7];
+181: !second digit must be a 5
+182: R[61]=R[61]+5;
+183: JMP LBL[10];
+
+184: LBL[8];
+185: !second digit must be a 9
+186: R[61]=R[61]+9;
+187: JMP LBL[10];
+
+188: LBL[9];
+189: !second digit must be a 6
+190: R[61]=R[61]+6;
+191: JMP LBL[10];
 
 
 
-Need to process here
-
-53: !prepare for next loop
-54: DO[112] = ON
 
 
 
-LBL[41];
-!If here, first digit must be a 2
-R[61]=20;
-JMP LBL[40];
 
-LBL[42];
-!If here, first digit must be a 4
-R[61]=40;
-JMP LBL[40];
-
-LBL[43];
-!If here, first digit must be a 0
-R[61]=00;
-JMP LBL[40];
-
-LBL[44];
-!first digit must be a 7
-R[61]=70;
-JMP LBL[40];
-
-LBL[45];
-!first digit must be a 1
-R[61]=10;
-JMP LBL[40];
-
-LBL[46];
-!first digit must be a 3
-R[61]=30;
-JMP LBL[40];
-
-LBL[47];
-!first digit must be a 5
-R[61]=50;
-JMP LBL[40];
-
-LBL[48];
-!first digit must be a 9
-R[61]=90;
-JMP LBL[40];
-
-LBL[49];
-!first digit must be a 6
-R[61]=60;
-JMP LBL[40];
-
+192: LBL[10];
+193: !prepare for next loop
+194: DO[112] = ON;
 
 /POS
 

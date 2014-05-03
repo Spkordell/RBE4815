@@ -1,11 +1,12 @@
 T1MAIN: 20
-T1SYNC: 30-33
+T1SYNC: 28-33, 40-49, 1-10
 50
 53
 54
 60
 70
 T1OVRDIG: 80-104
+
 
 
 Ranges are inclusive
