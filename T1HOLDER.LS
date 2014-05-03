@@ -9,7 +9,7 @@
 5: MESSAGE[Holder Empty];
 6: !R[80] = RDI[5];
 7: !IF R[80]=1, JMP LBL[55];
-7: WAIT RDI[5] = OFF;
+7: WAIT DI[100] = OFF;
 8: MESSAGE[Getting Rod From Holder];
 9: CALL T1OPEN;
 10: J P[28] 50% FINE;
