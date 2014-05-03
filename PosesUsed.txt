@@ -1,10 +1,10 @@
 Above each digital segment:
 1-23
 
-Down onto segment (incremental) (release/grab point):
+Down onto segment (or rod) (incremental) (release/grab point):
 24
 
-Up above segment (incremental) (same as 24 but reversed z):
+Up above segment (or rod) (incremental) (same as 24 but reversed z):
 25
 
 *Drop off point above top of holder:
@@ -20,7 +20,8 @@ Up above segment (incremental) (same as 24 but reversed z):
 29
 
 
-
+*Above each second rod:
+30-90
 
 
 *indicates the pose position has not yet been found

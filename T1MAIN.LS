@@ -59,20 +59,25 @@
 55: R[44]=1;
 56: R[45]=1;
 57: R[46]=0;
-58: !LOOP COUNTERS
-59: R[50]=1;
-60: R[52]=1;
-61: R[54]=1;
-62:!MISC
-63: R[51]=1;
-64: R[53]=1;
-65: R[55]=1;
+58: !Current seconds state
+59: R[60]=0;
+60: !Actual seconds state 
+61: R[61]=0;
+62: !LOOP COUNTERS
+63: R[50]=1;
+64: R[52]=1;
+65: R[54]=1;
+66:!MISC
+67: R[51]=1;
+68: R[53]=1;
+69: R[55]=1;
 
-66: LBL[20];
-67: CALL T1SYNC;
-68: CALL T1UPDIG;
-69: CALL T1UPSEC;
-70: JMP LBL[20];
+70: LBL[20];
+71: CALL T1SYNC;
+72: CALL T1UPDIG;
+73: CALL T1SYNC;
+74: CALL T1UPSEC;
+75: JMP LBL[20];
 
 /POS
 

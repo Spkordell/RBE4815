@@ -17,7 +17,7 @@ Loop Counter Aids (store adjusted value of loop between actual time and current 
 Storage for incoming second values during synchronization:
 70-77
 
-Seconds, current clock state (not yet implemented):
+Seconds, current clock state:
 60
 
 Seconds, actual time
