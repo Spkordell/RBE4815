@@ -55,17 +55,98 @@
 47: !Get first seconds digit
 48: DO[112] = ON
 49: DO[112] = OFF
+50: LBL[29];
+51: Message[Waiting for computer];
+52: IF DI[108]=OFF, JMP LBL[29];
+53: R[70]=DI[101];
+54: R[71]=DI[102];
+55: R[72]=DI[103];
+56: R[73]=DI[104];
+57: R[74]=DI[105];
+58: R[75]=DI[106];
+59: R[76]=DI[107];
+
+60: !Process first incoming second value
+
+
+
+Need to process value here
+need to fix line numbers below this point
+
+!if segment 2 is 0, must be a 2
+IF R[71] = 0, JMP LBL[41];
+!segment 6 and 7, Must be a 4
+IF R[75] = 0 AND R[76] = 1, JMP LBL[42]
+!segment 5 and 7, Must be a 0
+IF R[74] = 1 AND R[76] = 0, JMP LBL[43]
+!segment 6 and 7, Must be a 7
+IF R[75] = 1 AND R[76] = 0, JMP LBL[44]
+!segment 6 and 7, Must be a 1
+IF R[75] = 0 AND R[76] = 0, JMP LBL[45]
+!segment 5 and 6, Must be a 3
+IF R[74] = 0 AND R[75] = 1, JMP LBL[46]
+!segment 1 and 4, Must be a 5
+IF R[70] = 0 AND R[73] = 0, JMP LBL[47]
+
+
+##: LBL[40];
 
 50: !Get second seconds digit
 51: DO[112] = ON
 52: DO[112] = OFF
+29: LBL[28];
+30: Message[Waiting for computer];
+31: IF DI[108]=OFF, JMP LBL[28];
+32: R[71]=DI[101];
+33: R[72]=DI[102];
+34: R[73]=DI[103];
+35: R[74]=DI[104];
+36: R[75]=DI[105];
+37: R[76]=DI[106];
+38: R[77]=DI[107];
 
 
-
-
+Need to process here
 
 53: !prepare for next loop
 54: DO[112] = ON
+
+
+
+LBL[41];
+!If here, first digit must be a 2
+R[61]=20
+JMP LBL[40]
+
+LBL[42];
+!If here, first digit must be a 4
+R[61]=40
+JMP LBL[40]
+
+LBL[43];
+!If here, first digit must be a 0
+R[61]=00
+JMP LBL[40]
+
+LBL[44];
+!first digit must be a 7
+R[61]=70
+JMP LBL[40]
+
+LBL[45];
+!first digit must be a 1
+R[61]=10
+JMP LBL[40]
+
+LBL[46];
+!first digit must be a 3
+R[61]=30
+JMP LBL[40]
+
+LBL[47];
+!first digit must be a 5
+R[61]=50
+JMP LBL[40]
 
 /POS
 

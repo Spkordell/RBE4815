@@ -1,7 +1,7 @@
-Digits of Clock State:
+Digits, current Clock State:
 1-23
 
-Digits of actual time:
+Digits, actual time:
 24-46
 
 Loop  Counters:
@@ -9,7 +9,18 @@ Loop  Counters:
 52
 54
 
-Misc
+Loop Counter Aids:
 51
 53
 55
+
+Storage for incoming second values during synchronization:
+70-77
+
+Seconds, current clock state (not yet implemented):
+60
+
+Seconds, actual time
+61
+
+Ranges are inclusive
