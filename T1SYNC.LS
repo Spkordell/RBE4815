@@ -3,7 +3,7 @@
 /MN
 
 1: !Get fourth digit
-2: DO[112] = OFF
+2: DO[112] = OFF;
 3: LBL[33];
 4: Message[Waiting for computer];
 5: IF DI[108]=OFF, JMP LBL[33];
@@ -16,8 +16,8 @@
 12: R[46]=DI[107];
 
 13: !Get third digit
-14: DO[112] = ON
-15: DO[112] = OFF
+14: DO[112] = ON;
+15: DO[112] = OFF;
 16: LBL[32];
 17: Message[Waiting for computer];
 18: IF DI[108]=OFF, JMP LBL[32];
@@ -30,8 +30,8 @@
 25: R[39]=DI[107];
 
 26: !Get second digit
-27: DO[112] = ON
-28: DO[112] = OFF
+27: DO[112] = ON;
+28: DO[112] = OFF;
 29: LBL[31];
 30: Message[Waiting for computer];
 31: IF DI[108]=OFF, JMP LBL[31];
@@ -44,8 +44,8 @@
 38: R[32]=DI[107];
 
 39: !Get first digit
-40: DO[112] = ON
-41: DO[112] = OFF
+40: DO[112] = ON;
+41: DO[112] = OFF;
 42: LBL[30];
 43: Message[Waiting for computer];
 44: IF DI[108]=OFF, JMP LBL[30];
@@ -53,8 +53,8 @@
 46: R[25] = DI[102];
 
 47: !Get first seconds digit
-48: DO[112] = ON
-49: DO[112] = OFF
+48: DO[112] = ON;
+49: DO[112] = OFF;
 50: LBL[29];
 51: Message[Waiting for computer];
 52: IF DI[108]=OFF, JMP LBL[29];
@@ -81,19 +81,19 @@
 71: !segment 5 and 6, Must be a 3
 72: IF R[74] = 0 AND R[75] = 1, JMP LBL[46];
 73: !segment 1 and 4, Must be a 5
-74:  R[70] = 0 AND R[73] = 0, JMP LBL[47];
+74: IF R[70] = 0 AND R[73] = 0, JMP LBL[47];
 75: !segment 4, Must be a 9
 76: IF R[73] = 0, JMP LBL[48];
 77: !segment 1, Must be a 6
 78: IF R[70] = 0, JMP LBL[49];
 79: !If made it here, first digit must be 8
-80: R[61]=80
+80: R[61]=80;
 
 81: LBL[40];
 
 82: !Get second seconds digit
-83: DO[112] = ON
-84: DO[112] = OFF
+83: DO[112] = ON;
+84: DO[112] = OFF;
 85: LBL[28];
 86: Message[Waiting for computer];
 87: IF DI[108]=OFF, JMP LBL[28];
@@ -120,13 +120,13 @@
 106: !segment 5 and 6, Must be a 3
 107: IF R[74] = 0 AND R[75] = 1, JMP LBL[6];
 108: !segment 1 and 4, Must be a 5
-109:  R[70] = 0 AND R[73] = 0, JMP LBL[7];
+109: IF R[70] = 0 AND R[73] = 0, JMP LBL[7];
 110: !segment 4, Must be a 9
 111: IF R[73] = 0, JMP LBL[8];
 112: !segment 1, Must be a 6
 113: IF R[70] = 0, JMP LBL[9];
 114: !If made it here, first digit must be 8
-115: R[61]=80
+115: R[61]=80;
 116: !Jump to end of this routine
 117: JMP LBL[10];
 

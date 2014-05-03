@@ -13,12 +13,12 @@
 9: L P[25] 500mm/sec FINE INC;
 
 10: !Set digit as clear
-11: R[R[54]] = 0
+11: R[R[54]] = 0;
 
 12: !move to holder top
 13: J P[26] 50% FINE;
 14: !insert into holder
-15: L P[27] 50% FINE;
+15: L P[27] 500mm/sec FINE;
 16: CALL T1OPEN;
 17: !move to holder top
 18: J P[26] 50% FINE;

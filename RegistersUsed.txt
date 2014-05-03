@@ -23,6 +23,7 @@ Seconds, current clock state (not yet implemented):
 Seconds, actual time
 61
 
-
+Stores state of digital sensor
+80
 
 Ranges are inclusive
