@@ -90,7 +90,7 @@
 80: R[61]=80;
 
 81: LBL[40];
-82: Message[S1=R[61]]
+82: Message[S1=R[61]];
 
 83: DO[112] = ON;
 84: DO[112] = OFF;
@@ -131,7 +131,7 @@
 117: JMP LBL[10];
 
 
-118: Message[S1=R[61]]
+118: Message[S1=R[61]];
 
 119: LBL[41];
 120: !first digit must be a 2
