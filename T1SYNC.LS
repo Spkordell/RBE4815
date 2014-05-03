@@ -5,7 +5,7 @@
 1: !Get fourth digit
 2: DO[112] = OFF;
 3: LBL[33];
-4: Message[Waiting for computer];
+4: Message[Waiting for computer - D4];
 5: IF DI[108]=OFF, JMP LBL[33];
 6: R[40]=DI[101];
 7: R[41]=DI[102];
@@ -14,12 +14,12 @@
 10: R[44]=DI[105];
 11: R[45]=DI[106];
 12: R[46]=DI[107];
+13: Message[D4=R[40]R[41]R[42]R[43]R[44]R[45]R[46]];
 
-13: !Get third digit
 14: DO[112] = ON;
 15: DO[112] = OFF;
 16: LBL[32];
-17: Message[Waiting for computer];
+17: Message[Waiting for computer - D3];
 18: IF DI[108]=OFF, JMP LBL[32];
 19: R[33]=DI[101];
 20: R[34]=DI[102];
@@ -28,12 +28,12 @@
 23: R[37]=DI[105];
 24: R[38]=DI[106];
 25: R[39]=DI[107];
+26: Message[D3=R[33]R[34]R[35]R[36]R[37]R[38]R[39]];
 
-26: !Get second digit
 27: DO[112] = ON;
 28: DO[112] = OFF;
 29: LBL[31];
-30: Message[Waiting for computer];
+30: Message[Waiting for computer - D2];
 31: IF DI[108]=OFF, JMP LBL[31];
 32: R[26]=DI[101];
 33: R[27]=DI[102];
@@ -42,21 +42,21 @@
 36: R[30]=DI[105];
 37: R[31]=DI[106];
 38: R[32]=DI[107];
+39: Message[D2=R[26]R[27]R[28]R[29]R[30]R[31]R[32]];
 
-39: !Get first digit
 40: DO[112] = ON;
 41: DO[112] = OFF;
 42: LBL[30];
-43: Message[Waiting for computer];
+43: Message[Waiting for computer - D1];
 44: IF DI[108]=OFF, JMP LBL[30];
 45: R[24] = DI[101];
 46: R[25] = DI[102];
+47: Message[D1=R[24]R[25]];
 
-47: !Get first seconds digit
 48: DO[112] = ON;
 49: DO[112] = OFF;
 50: LBL[29];
-51: Message[Waiting for computer];
+51: Message[Waiting for computer - S1];
 52: IF DI[108]=OFF, JMP LBL[29];
 53: R[70]=DI[101];
 54: R[71]=DI[102];
@@ -90,12 +90,12 @@
 80: R[61]=80;
 
 81: LBL[40];
+82: Message[S1=R[61]]
 
-82: !Get second seconds digit
 83: DO[112] = ON;
 84: DO[112] = OFF;
 85: LBL[28];
-86: Message[Waiting for computer];
+86: Message[Waiting for computer - S2];
 87: IF DI[108]=OFF, JMP LBL[28];
 88: R[71]=DI[101];
 89: R[72]=DI[102];
@@ -131,7 +131,7 @@
 117: JMP LBL[10];
 
 
-118: !Below here are LBLs to set the first digit
+118: Message[S1=R[61]]
 
 119: LBL[41];
 120: !first digit must be a 2
@@ -226,10 +226,6 @@
 189: !second digit must be a 6
 190: R[61]=R[61]+6;
 191: JMP LBL[10];
-
-
-
-
 
 
 
