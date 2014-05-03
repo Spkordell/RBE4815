@@ -18,7 +18,7 @@
 13: LBL[53];
 14: !pick up digit to remove
 15: !move over digit
-16: J P[R[52]] 50% FINE;
+16: CALL T1OVRDIG(R[52]);
 17: CALL T1OPEN;
 18: !move down onto digit
 19: L P[24] 500mm/sec FINE INC;
