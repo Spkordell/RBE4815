@@ -40,7 +40,7 @@
 P[24]{
 GP1:
 	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
-	X = 0.000 mm, Y = 0.000 mm, Z = -57.792 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
+	X = 0.000 mm, Y = 0.000 mm, Z = -68.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
 };
 
 
@@ -48,7 +48,7 @@ GP1:
 P[25]{
 GP1:
 	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
-	X = 0.000 mm, Y = 0.000 mm, Z = 57.792 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
+	X = 0.000 mm, Y = 0.000 mm, Z = 68.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
 };
 
 /END

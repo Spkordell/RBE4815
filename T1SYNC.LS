@@ -130,8 +130,7 @@
 116: !Jump to end of this routine
 117: JMP LBL[10];
 
-
-118: Message[S1=R[61]];
+118: !Below here are LBLs to set the first digit
 
 119: LBL[41];
 120: !first digit must be a 2
@@ -232,6 +231,7 @@
 192: LBL[10];
 193: !prepare for next loop
 194: DO[112] = ON;
+195: Message[S1=R[61]];
 
 /POS
 

@@ -7,16 +7,16 @@ Down onto segment (or rod) (incremental) (release/grab point):
 Up above segment (or rod) (incremental) (same as 24 but reversed z):
 25
 
-*Drop off point above top of holder:
+Drop off point above top of holder:
 26
 
-*Drop off point at top of holder (release point):
+Drop off point at top of holder (release point):
 27
 
-*Pick up point above bottom of holder:
+Pick up point above bottom of holder:
 28
 
-*Pick up point at bottom of holder (pick up point):
+Pick up point at bottom of holder (pick up point):
 29
 
 
