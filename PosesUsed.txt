@@ -1,10 +1,10 @@
-*Above each digital segment:
+Above each digital segment:
 1-23
 
-*Down onto segment (incremental) (release/grab point):
+Down onto segment (incremental) (release/grab point):
 24
 
-*Up above segment (incremental) (same as 24 but reversed z):
+Up above segment (incremental) (same as 24 but reversed z):
 25
 
 *Drop off point above top of holder:
