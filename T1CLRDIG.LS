@@ -11,13 +11,18 @@
 7: CALL T1CLOSE;
 8: !Move above segment;
 9: L P[25] 500mm/sec FINE INC;
-10: !move to holder top
-11: J P[26] 50% FINE;
-12: !insert into holder
-13: L P[27] 50% FINE;
-14: CALL T1OPEN;
-15: !move to holder top
-16: J P[26] 50% FINE;
+
+10: !Set digit as clear
+11: R[R[54]] = 0
+
+12: !move to holder top
+13: J P[26] 50% FINE;
+14: !insert into holder
+15: L P[27] 50% FINE;
+16: CALL T1OPEN;
+17: !move to holder top
+18: J P[26] 50% FINE;
+
 
 /POS
 

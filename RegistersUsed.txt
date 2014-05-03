@@ -5,11 +5,11 @@ Digits, actual time:
 24-46
 
 Loop  Counters:
-50
-52
-54
+50 - segment to set
+52 - segment to clear while setting (where to get set rod from)
+54 - segment to clear
 
-Loop Counter Aids:
+Loop Counter Aids (store adjusted value of loop between actual time and current state):
 51
 53
 55
@@ -22,5 +22,7 @@ Seconds, current clock state (not yet implemented):
 
 Seconds, actual time
 61
+
+
 
 Ranges are inclusive

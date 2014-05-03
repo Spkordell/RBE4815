@@ -25,15 +25,23 @@
 20: CALL T1CLOSE;
 21: !move up over the digit
 22: L P[25] 500mm/sec FINE INC;
-23: LBL[54];
-24: !Place segment in position
-25: !Move over segment to place
-26: CALL T1OVRDIG(R[50]);
-27: !Move segment down
-28: L P[24] 500mm/sec FINE INC;
-29: CALL T1OPEN;
-30: !move back up
-31: L P[25] 500mm/sec FINE INC;
+
+23: !change state of digit to be clear
+24: R[R[52]]=0;
+
+25: LBL[54];
+26: !Place segment in position
+27: !Move over segment to place
+28: CALL T1OVRDIG(R[50]);
+29: !Move segment down
+30: L P[24] 500mm/sec FINE INC;
+31: CALL T1OPEN;
+32: !move back up
+33: L P[25] 500mm/sec FINE INC;
+
+
+34: !change state of digit to be set
+35: R[R[50]]=1;
 
 /POS
 

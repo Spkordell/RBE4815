@@ -68,7 +68,6 @@
 64: R[53]=1;
 65: R[55]=1;
 
-
 66: LBL[20];
 67: CALL T1SYNC;
 68: CALL T1UPDIG;
