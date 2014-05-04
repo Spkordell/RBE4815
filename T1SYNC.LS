@@ -17,11 +17,9 @@
 13: Message[Digit 4 Read];
 
 14: DO[112] = ON;
-15: TIMER[1]=RESET;
-16: TIMER[1]=START;
-17: LBL[11];
-18: R[90]=TIMER[1];
-19: IF R[90] < 0.01, JMP LBL[11];
+15: !wait for 108 to go off
+16: LBL[500];
+77: IF DI[108]=ON, JMP LBL[500];
 20: DO[112] = OFF;
 21: LBL[32];
 22: Message[Waiting for computer - D3];
@@ -35,12 +33,11 @@
 30: R[39]=DI[107];
 31: Message[Digit 3 Read];
 
+
 31: DO[112] = ON;
-32: TIMER[1]=RESET;
-33: TIMER[1]=START;
-34: LBL[12];
-35: R[90]=TIMER[1];
-36: IF R[90] < 0.01, JMP LBL[12];
+15: !wait for 108 to go off
+16: LBL[502];
+77: IF DI[108]=ON, JMP LBL[502];
 37: DO[112] = OFF;
 38: LBL[31];
 39: Message[Waiting for computer - D2];
@@ -54,12 +51,11 @@
 47: R[32]=DI[107];
 48: Message[Digit 2 Read];
 
+
 49: DO[112] = ON;
-50: TIMER[1]=RESET;
-51: TIMER[1]=START;
-52: LBL[13];
-53: R[90]=TIMER[1];
-54: IF R[90] < 0.01, JMP LBL[13];
+15: !wait for 108 to go off
+16: LBL[503];
+77: IF DI[108]=ON, JMP LBL[503];
 55: DO[112] = OFF;
 56: LBL[30];
 57: Message[Waiting for computer - D1];
@@ -68,12 +64,11 @@
 60: R[25] = DI[102];
 61: Message[Digit 1 Read];
 
+
 62: DO[112] = ON;
-63: TIMER[1]=RESET;
-64: TIMER[1]=START;
-65: LBL[14];
-66: R[90]=TIMER[1];
-67: IF R[90] < 0.01, JMP LBL[14];
+15: !wait for 108 to go off
+16: LBL[504];
+77: IF DI[108]=ON, JMP LBL[504];
 68: DO[112] = OFF;
 69: LBL[29];
 70: Message[Waiting for computer - S1];
@@ -112,11 +107,9 @@
 101: Message[Second 1 Read];
 
 102: DO[112] = ON;
-103: TIMER[1]=RESET;
-104: TIMER[1]=START;
-105: LBL[15];
-106: R[90]=TIMER[1];
-107: IF R[90] < 0.01, JMP LBL[15];
+15: !wait for 108 to go off
+16: LBL[505];
+77: IF DI[108]=ON, JMP LBL[505];
 108: DO[112] = OFF;
 109: LBL[28];
 110: Message[Waiting for computer - S2];
@@ -253,11 +246,9 @@
 217: LBL[10];
 218: !prepare for next loop
 219: DO[112] = ON;
-220: TIMER[1]=RESET;
-221: TIMER[1]=START;
-222: LBL[16];
-223: R[90]=TIMER[1];
-224: IF R[90] < 0.01, JMP LBL[16];
+15: !wait for 108 to go off
+16: LBL[506];
+77: IF DI[108]=ON, JMP LBL[506];
 225: Message[Second 2 Read];
 226: Message[Sync Done];
 
