@@ -20,10 +20,14 @@ Storage for incoming second values during synchronization:
 Seconds, current clock state:
 60
 
-Seconds, actual time
+Seconds, actual time:
 61
 
-Stores state of digital sensor
+Stores state of digital sensor:
 80
+
+
+Stores timer value:
+90
 
 Ranges are inclusive
