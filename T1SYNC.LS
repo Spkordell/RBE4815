@@ -5,7 +5,7 @@
 1: !Get fourth digit
 2: DO[112] = OFF;
 3: LBL[33];
-4: Message[Waiting for computer - D4];
+4: !Message[Waiting for computer - D4];
 5: IF DI[108]=OFF, JMP LBL[33];
 6: R[40]=DI[101];
 7: R[41]=DI[102];
@@ -22,7 +22,7 @@
 77: IF DI[108]=ON, JMP LBL[500];
 20: DO[112] = OFF;
 21: LBL[32];
-22: Message[Waiting for computer - D3];
+22: !Message[Waiting for computer - D3];
 23: IF DI[108]=OFF, JMP LBL[32];
 24: R[33]=DI[101];
 25: R[34]=DI[102];
@@ -40,7 +40,7 @@
 77: IF DI[108]=ON, JMP LBL[502];
 37: DO[112] = OFF;
 38: LBL[31];
-39: Message[Waiting for computer - D2];
+39: !Message[Waiting for computer - D2];
 40: IF DI[108]=OFF, JMP LBL[31];
 41: R[26]=DI[101];
 42: R[27]=DI[102];
@@ -58,7 +58,7 @@
 77: IF DI[108]=ON, JMP LBL[503];
 55: DO[112] = OFF;
 56: LBL[30];
-57: Message[Waiting for computer - D1];
+57: !Message[Waiting for computer - D1];
 58: IF DI[108]=OFF, JMP LBL[30];
 59: R[24] = DI[107];
 60: R[25] = DI[107];
@@ -71,7 +71,7 @@
 77: IF DI[108]=ON, JMP LBL[504];
 68: DO[112] = OFF;
 69: LBL[29];
-70: Message[Waiting for computer - S1];
+70: !Message[Waiting for computer - S1];
 71: IF DI[108]=OFF, JMP LBL[29];
 72: R[70]=DI[101];
 73: R[71]=DI[102];
@@ -112,7 +112,7 @@
 77: IF DI[108]=ON, JMP LBL[505];
 108: DO[112] = OFF;
 109: LBL[28];
-110: Message[Waiting for computer - S2];
+110: !Message[Waiting for computer - S2];
 111: IF DI[108]=OFF, JMP LBL[28];
 112: R[71]=DI[101];
 113: R[72]=DI[102];

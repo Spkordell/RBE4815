@@ -25,9 +25,9 @@ Above each second rod:
 
 
 Down onto second rod (incremental):
-91
+91, 93
 
 Up above second rod (incremental):
-92
+92, 94
 
 *indicates the pose position has not yet been found
