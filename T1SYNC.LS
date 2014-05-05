@@ -60,8 +60,8 @@
 56: LBL[30];
 57: Message[Waiting for computer - D1];
 58: IF DI[108]=OFF, JMP LBL[30];
-59: R[24] = DI[101];
-60: R[25] = DI[102];
+59: R[24] = DI[107];
+60: R[25] = DI[107];
 61: Message[Digit 1 Read];
 
 

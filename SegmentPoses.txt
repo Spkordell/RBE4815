@@ -165,20 +165,20 @@ R = -90
 
 P[8]{
 GP1:
-	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
+	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 0 ',
 	X = 676.138 mm, Y = -55.079 mm, Z = -121.690 mm, W = 179.589 deg, P = 0.000 deg, R = -90.000 deg
 };
 
 P[15]{
 GP1:
-	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
+	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 0 ',
 	X = 676.138 mm, Y = 38.361 mm, Z = -121.690 mm, W = 179.589 deg, P = 0.000 deg, R = -90.000 deg
 };
 
 
 P[22]{
 GP1:
-	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
+	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 0 ',
 	X = 676.138 mm, Y = 126.840 mm, Z = -121.690 mm, W = 179.589 deg, P = 0.000 deg, R = -90.000 deg
 };
 

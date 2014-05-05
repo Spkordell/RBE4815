@@ -20,8 +20,14 @@ Pick up point at bottom of holder (pick up point):
 29
 
 
-*Above each second rod:
+Above each second rod:
 30-90
 
+
+Down onto second rod (incremental):
+91
+
+Up above second rod (incremental):
+92
 
 *indicates the pose position has not yet been found
