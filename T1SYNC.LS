@@ -60,8 +60,8 @@
 56: LBL[30];
 57: !Message[Waiting for computer - D1];
 58: IF DI[108]=OFF, JMP LBL[30];
-59: R[24] = DI[107];
-60: R[25] = DI[107];
+59: R[24] = DI[101];
+60: R[25] = DI[101];
 61: Message[Digit 1 Read];
 
 
@@ -246,11 +246,15 @@
 217: LBL[10];
 218: !prepare for next loop
 219: DO[112] = ON;
-15: !wait for 108 to go off
-16: LBL[506];
-77: IF DI[108]=ON, JMP LBL[506];
-225: Message[Second 2 Read];
-226: Message[Sync Done];
+220: !wait for 108 to go off
+221: LBL[506];
+222: IF DI[108]=ON, JMP LBL[506];
+223: Message[Second 2 Read];
+224: Message[Sync Done];
+
+225: TIMER[1]=STOP;
+226: TIMER[1]=RESET;
+227: TIMER[1]=START;
 
 /POS
 

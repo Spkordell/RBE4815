@@ -30,4 +30,10 @@ Stores state of digital sensor:
 Stores timer value:
 90
 
+
+
+
+timer addition:
+62
+
 Ranges are inclusive
