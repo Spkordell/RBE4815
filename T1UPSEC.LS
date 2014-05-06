@@ -105,21 +105,20 @@
 P[91]{
 GP1:
 	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
-	X = 0.000 mm, Y = 0.000 mm, Z = -72.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
+	X = 0.000 mm, Y = 0.000 mm, Z = -74.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
 };
-
 
 
 P[92]{
 GP1:
 	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
-	X = 0.000 mm, Y = 0.000 mm, Z = 72.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
+	X = 0.000 mm, Y = 0.000 mm, Z = 74.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
 };
 
 P[93]{
 GP1:
 	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
-	X = 0.000 mm, Y = 0.000 mm, Z = -81.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
+	X = 0.000 mm, Y = 0.000 mm, Z = -83.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
 };
 
 
@@ -127,7 +126,7 @@ GP1:
 P[94]{
 GP1:
 	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
-	X = 0.000 mm, Y = 0.000 mm, Z = 81.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
+	X = 0.000 mm, Y = 0.000 mm, Z = 83.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
 };
 
 /END
