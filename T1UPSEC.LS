@@ -15,14 +15,14 @@
 8: CALL T1OPEN;
 9: !move down onto rod
 
-10: IF R[61] >= 15 and R[61] < 45, JMP LBL[1100];
+10: IF R[61] >= 12 and R[61] < 45, JMP LBL[1100];
 11: !else
 12: L P[93] 500mm/sec FINE INC;
 13: LBL[1102];
 
 14: CALL T1CLOSE;
 15: !move up above rod
-16: IF R[61] >= 15 and R[61] < 45, JMP LBL[1105];
+16: IF R[61] >= 12 and R[61] < 45, JMP LBL[1105];
 17: !else
 18: L P[94] 500mm/sec FINE INC;
 19: LBL[1106];
@@ -32,13 +32,13 @@
 22: CALL T1OVRSEC(R[60]);
 23: !move down onto rod
 
-24: IF R[60] >= 15 and R[60] < 45, JMP LBL[1110];
+24: IF R[61] >= 12 and R[60] < 45, JMP LBL[1110];
 25: !else
 26: L P[93] 500mm/sec FINE INC;
 27: LBL[1112];
 18: CALL T1OPEN;
 29: !move up above rod
-30: IF R[60] >= 15 and R[609] < 45, JMP LBL[1120];
+30: IF R[61] >= 12 and R[60] < 45, JMP LBL[1120];
 31: !else
 32: L P[94] 500mm/sec FINE INC;
 33: LBL[1122];
@@ -46,23 +46,25 @@
 34: !Save new state
 35: R[60] = R[61];
 
-36: LBL[1100];
-37: L P[91] 500mm/sec FINE INC;
-38: JMP LBL[1102];
+36: JMP LBL[900];
 
-39: LBL[1105];
-40: L P[92] 500mm/sec FINE INC;
-41: JMP LBL[1106];
+37: LBL[1100];
+38: L P[91] 500mm/sec FINE INC;
+39: JMP LBL[1102];
 
-42: LBL[1110];
-43: L P[91] 500mm/sec FINE INC;
-44: JMP LBL[1112];
+40: LBL[1105];
+41: L P[92] 500mm/sec FINE INC;
+42: JMP LBL[1106];
 
-45: LBL[1120];
-46: L P[92] 500mm/sec FINE INC;
-47: JMP LBL[1122];
+43: LBL[1110];
+44: L P[91] 500mm/sec FINE INC;
+45: JMP LBL[1112];
 
-48: LBL[900];
+46: LBL[1120];
+47: L P[92] 500mm/sec FINE INC;
+48: JMP LBL[1122];
+
+49: LBL[900];
 
 /POS
 
@@ -84,7 +86,7 @@ GP1:
 P[93]{
 GP1:
 	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
-	X = 0.000 mm, Y = 0.000 mm, Z = -72.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
+	X = 0.000 mm, Y = 0.000 mm, Z = -81.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
 };
 
 
@@ -92,7 +94,7 @@ GP1:
 P[94]{
 GP1:
 	UF : 0, UT : 2,		CONFIG : 'N U T, , 0, 01 ',
-	X = 0.000 mm, Y = 0.000 mm, Z = 72.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
+	X = 0.000 mm, Y = 0.000 mm, Z = 81.000 mm, W = 0.000 deg, P = 0.000 deg, R = 0.000 deg
 };
 
 /END
